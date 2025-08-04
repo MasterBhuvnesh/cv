@@ -1,10 +1,17 @@
 "use client";
-import { useState } from "react";
 import { ShinyButton } from "../magicui/shiny-button";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import { X } from "lucide-react";
 
 export function TechStackSection() {
-  const [showTechStack, setShowTechStack] = useState(false);
-
   const specialTechStack = [
     "Expo",
     "Next.js",
@@ -113,39 +120,58 @@ export function TechStackSection() {
           </div>
         ))}
       </div>
-      <div className="mt-6 ">
-        {/*  WILL DO LATER  JUST UNCOMMENT */}
-        {/* <ShinyButton
-          className="mb-4 px-4 py-2 text-sm"
-          onClick={() => setShowTechStack((prev) => !prev)}
-        >
-          {showTechStack ? "Minimize" : "View All"}
-        </ShinyButton> */}
+      <div className="mt-6">
+        <Drawer>
+          <DrawerTrigger asChild>
+            <ShinyButton className="mb-4 px-4 py-2 text-sm">
+              View All Technologies
+            </ShinyButton>
+          </DrawerTrigger>
+          <DrawerContent className="max-h-[85vh]">
+            <DrawerHeader className="text-center sm:text-left">
+              <DrawerTitle className="text-xl font-semibold">
+                Complete Tech Stack
+              </DrawerTitle>
+              <DrawerDescription>
+                All technologies and tools I work with, organized by category
+              </DrawerDescription>
+            </DrawerHeader>
 
-        {showTechStack && (
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
-            {Object.entries(techStack).map(([category, technologies]) => (
-              <div
-                key={category}
-                className="bg-white border-gray-100 rounded-xl shadow p-5 flex flex-col"
-              >
-                <h3 className="text-gray-900 text-base mb-3 capitalize">
-                  {category.replace(/([A-Z])/g, " $1").trim()}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {technologies.map((tech, index) => (
-                    <div
-                      key={index}
-                      className="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm"
-                    >
-                      {tech.name}
+            <div className="px-4 pb-4 overflow-y-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+                {Object.entries(techStack).map(([category, technologies]) => (
+                  <div
+                    key={category}
+                    className="bg-gray-50 border border-gray-200 rounded-lg p-4"
+                  >
+                    <h3 className="text-gray-900 text-base font-medium mb-3 capitalize">
+                      {category.replace(/([A-Z])/g, " $1").trim()}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {technologies.map((tech, index) => (
+                        <div
+                          key={index}
+                          className="bg-white text-gray-700 px-3 py-1 rounded-md text-sm border border-gray-200 shadow-sm"
+                        >
+                          {tech.name}
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        )}
+            </div>
+
+            <div className="flex justify-center p-4 border-t border-gray-200">
+              <DrawerClose asChild>
+                <button className="flex items-center gap-2 px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition-colors">
+                  <X className="w-4 h-4" />
+                  Close
+                </button>
+              </DrawerClose>
+            </div>
+          </DrawerContent>
+        </Drawer>
       </div>
     </section>
   );

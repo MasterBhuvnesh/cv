@@ -46,8 +46,12 @@ export function ExperienceSection() {
               <div className="px-3 py-1">
                 <div className="flex items-center justify-between">
                   <div className="pl-2 pb-1">
-                    <h3 className=" text-gray-900">{job.company}</h3>
-                    <p className="text-sm text-gray-600">{job.position}</p>
+                    <h3 className=" text-gray-900  text-sm sm:text-base">
+                      {job.company}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600">
+                      {job.position}
+                    </p>
                   </div>
 
                   <div className="flex items-center gap-2">

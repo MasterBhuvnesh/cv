@@ -140,3 +140,7 @@
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+.font-dancing-script {
+  font-family: var(--font-dancing-script);
+}

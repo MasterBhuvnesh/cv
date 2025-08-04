@@ -1,12 +1,8 @@
-import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
 import "./globals.css";
+import { fontStyles } from "@/lib/fonts";
+import { metadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Portfolio CV",
-  description: "A portfolio CV application",
-};
+export { metadata };
 
 export default function RootLayout({
   children,
@@ -16,16 +12,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
-        `}</style>
+        <style>{fontStyles}</style>
       </head>
       {/*  CHANGE LATER */}
-      <body className="bg-gray-50 px-0 md:px-[200px]">{children}</body>
+      <body className="bg-gray-50">{children}</body>
     </html>
   );
 }

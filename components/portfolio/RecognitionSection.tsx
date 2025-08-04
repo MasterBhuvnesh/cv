@@ -1,33 +1,44 @@
-// components/portfolio/RecognitionSection.tsx
 export function RecognitionSection() {
   const recognition = [
-    { title: "Best Web Designer", organization: "Awwwards", year: "2023" },
+    { title: "Android Developer", organization: "GDG Campus", year: "2023" },
     {
-      title: "Best animations awards",
-      organization: "Framer Awards",
-      year: "2020",
+      title: "Best Architecture Design",
+      organization: "ByteByteGo",
+      year: "2024",
     },
     {
-      title: "Top visual designer of the year",
-      organization: "Awwwards",
-      year: "2020",
+      title: "Karate Certified",
+      organization: "Gitoku Kai India",
+      year: "2022",
     },
   ];
 
   return (
     <section>
-      <h2 className="text-lg font-semibold text-gray-900 mb-4">RECOGNITION</h2>
-      <div className="space-y-3">
-        {recognition.map((award, index) => (
+      <div className="mb-6">
+        <span className="text-gray-900 text-base inline-block border px-3 border-gray-300 rounded-lg mb-4 bg-gray-50 capitalize text-center">
+          RECOGNITION
+        </span>
+      </div>
+      <div className="space-y-4">
+        {recognition.map((item, idx) => (
           <div
-            key={index}
-            className="flex justify-between items-center p-4 bg-white rounded-lg border hover:shadow-md hover:scale-[1.01] transition-all duration-200 ease-in-out cursor-pointer"
+            key={item.title + item.year}
+            className="bg-white rounded-xl shadow-sm overflow-hidden cursor-pointer hover:shadow-md transition-shadow duration-200 ease-in-out"
           >
-            <div>
-              <h3 className="font-semibold text-gray-900">{award.title}</h3>
-              <p className="text-gray-600 text-sm">{award.organization}</p>
+            <div className="px-3 py-1">
+              <div className="flex items-center justify-between">
+                <div className="pl-2 pb-1">
+                  <h3 className="text-gray-900 text-sm sm:text-base">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-600">
+                    {item.organization}
+                  </p>
+                </div>
+                <span className="text-[12px] text-gray-500">{item.year}</span>
+              </div>
             </div>
-            <span className="text-gray-500 text-sm">{award.year}</span>
           </div>
         ))}
       </div>

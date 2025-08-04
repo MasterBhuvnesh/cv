@@ -11,94 +11,84 @@ export function EducationSection() {
 
   const education = [
     {
-      institution: "Berlin State University",
-      degree: "Undergraduate in UI/UX",
-      period: "Aug 24 - Present",
-      icon: "🎓",
+      id: 1,
+      institution: "Ramdevbaba University Nagpur",
+      degree: "Artificial Intelligence and Machine Learning",
+      period: "Aug 2022 - Present",
       description:
-        "Focused on user-centered design, prototyping, and digital interfaces. Collaborated on design projects and participated in workshops using tools like Figma and Adobe XD.",
+        "Focused on advanced topics in AI and ML, including deep learning, natural language processing, and computer vision. Developed practical skills through projects and collaborations, enhancing my understanding of real-world applications.",
     },
     {
-      institution: "GreenFields High School",
-      degree: "High school diploma",
-      period: "Sep 22 - Aug 24",
-      icon: "🏫",
+      id: 2,
+      institution: "St. Paul School",
+      degree: "High school Diploma",
+      period: "2020 - 2022",
       description:
-        "At GreenFields High School, I excelled in subjects such as Graphic Design and Technology, which sparked my interest in UI/UX. I also engaged in extracurricular activities, including leading the school's digital design club and creating digital assets for school events.",
+        "At St. Paul School, I completed my high school education with a focus on science and mathematics. This foundation has been crucial in my pursuit of higher education in technology and engineering.",
     },
   ];
+
+  const toggleEducation = (id: number) => {
+    setExpandedEducation((prev) => (prev === id ? null : id));
+  };
 
   return (
     <section>
       <div className="mb-6">
-        <span className="inline-block px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
+        <span className="text-gray-900 text-base inline-block border px-3 border-gray-300 rounded-lg mb-4 bg-gray-50 capitalize text-center">
           EDUCATION
         </span>
       </div>
-      <div className="space-y-4">
-        {education.map((edu, index) => (
-          <div key={index}>
+      <div className="bg-gray-50">
+        <div className="space-y-4">
+          {education.map((edu) => (
             <div
-              className="flex items-center justify-between p-4 bg-white rounded-lg border cursor-pointer hover:shadow-md hover:scale-[1.01] transition-all duration-200 ease-in-out"
-              onClick={() =>
-                setExpandedEducation(expandedEducation === index ? null : index)
-              }
+              key={edu.id}
+              className="bg-white rounded-xl shadow-sm overflow-hidden cursor-pointer hover:shadow-md transition-shadow duration-200 ease-in-out"
+              onClick={() => toggleEducation(edu.id)}
             >
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-xl">
-                  {edu.icon}
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">
-                    {edu.institution}
-                  </h3>
-                  <p className="text-gray-600 text-sm">{edu.degree}</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-sm text-gray-500">{edu.period}</span>
-                <ChevronDown
-                  className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${
-                    expandedEducation === index ? "rotate-180" : ""
-                  }`}
-                />
-              </div>
-            </div>
-
-            {expandedEducation === index && (
-              <div className="mt-2 p-4 bg-gray-50 rounded-lg border animate-in slide-in-from-top-2 duration-200">
-                <div className="flex justify-between items-start mb-3">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded bg-amber-100 flex items-center justify-center text-sm">
-                      {edu.icon}
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">
-                        {edu.institution}
-                      </h4>
-                      <p className="text-gray-600 text-sm">{edu.degree}</p>
-                    </div>
+              <div className="px-3 py-1">
+                <div className="flex items-center justify-between">
+                  <div className="pl-2 pb-1">
+                    <h3 className="text-gray-900 text-sm sm:text-base">
+                      {edu.institution}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-600">
+                      {edu.degree}
+                    </p>
                   </div>
+
                   <div className="flex items-center gap-2">
-                    <span className="text-sm text-gray-500">{edu.period}</span>
+                    <span className="text-[12px] text-gray-500">
+                      {edu.period}
+                    </span>
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        setExpandedEducation(null);
+                        toggleEducation(edu.id);
                       }}
-                      className="p-1 hover:bg-gray-200 rounded transition-colors"
+                      className="p-1 hover:bg-white/50 rounded-md transition-colors"
                     >
-                      <X className="w-4 h-4 text-gray-400" />
+                      {expandedEducation === edu.id ? (
+                        <X className="w-4 h-4 text-gray-600" />
+                      ) : (
+                        <ChevronDown className="w-4 h-4 text-gray-600" />
+                      )}
                     </button>
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {edu.description}
-                </p>
               </div>
-            )}
-          </div>
-        ))}
+
+              {expandedEducation === edu.id && (
+                <div className="p-4 border-t border-gray-100">
+                  <p className="leading-relaxed text-gray-600 text-sm">
+                    {edu.description}
+                  </p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

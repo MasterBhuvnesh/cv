@@ -1,52 +1,28 @@
 import Image from "next/image";
-import { ExternalLink, GithubIcon } from "lucide-react";
-import { info } from "console";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export function ProjectsSection() {
-  // const projects = [
-  //   {
-  //     title: "Slate",
-  //     description:
-  //       "A sleek and responsive landing page designed for modern startups to showcase their products effectively.",
-  //     image: "/placeholder.svg?height=200&width=300",
-  //     link: "#",
-  //     github: "#",
-  //     info: "#",
-  //   },
-  //   {
-  //     title: "Anterafull",
-  //     description:
-  //       "A dynamic animation focused landing page highlighting creative storytelling and interactive elements.",
-  //     image: "/placeholder.svg?height=200&width=300",
-  //     link: "#",
-  //     github: "#",
-  //     info: "#",
-  //   },
-  //   {
-  //     title: "Blurr",
-  //     description:
-  //       "A modern portfolio website with smooth animations and clean design aesthetics.",
-  //     image: "/placeholder.svg?height=200&width=300",
-  //     link: "#",
-  //     github: "#",
-  //     info: "#",
-  //   },
-  // ];
   const projects = [
     {
       title: "Schedula - Event Organizing & Managing App",
+      icon: "Schedula",
       description:
         "A modern event management app with real-time event discovery, QR-based ticketing, one-tap registration, and admin check-in—built with a custom Node.js backend, Expo, and Supabase.",
-      image: "/placeholder.svg?height=200&width=300",
-      link: "https://bhuvneshverma.expo.app",
+      image: "/gamma.jpg?height=120&width=300",
+      link: "",
       github: "https://github.com/MasterBhuvnesh/Schedula-Application",
       info: "https://github.com/MasterBhuvnesh/Schedula-Application#readme",
     },
     {
       title: "Kissan Vikas –  Farmer Connection App",
+      icon: "Kissan Vikas",
       description:
         "A dual-language app that bridges rural health awareness (leprosy) and agricultural knowledge sharing, inspired by fieldwork at Anandwan. Built using Expo and Gemini for real-time, verified resources.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/theta.jpg?height=120&width=300",
       link: "https://kisanvikas.expo.app",
       github: "https://github.com/MasterBhuvnesh/Kisan-Vikas",
       info: "https://github.com/MasterBhuvnesh/Kisan-Vikas#readme",
@@ -64,48 +40,62 @@ export function ProjectsSection() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg border overflow-hidden hover:shadow-lg hover:scale-[1.02] transition-all duration-300 ease-in-out cursor-pointer"
+            className="bg-white rounded-lg border overflow-hidden hover:shadow-lg hover:scale-[1.02] transition-all duration-300 ease-in-out cursor-pointer flex flex-col h-full"
           >
-            <div className="aspect-video bg-gray-100">
-              <Image
-                src={project.image || "/placeholder.svg"}
-                alt={project.title}
-                width={500}
-                height={400}
-                className="w-full h-full object-cover"
-              />
+            {/* Image Section - Made smaller and more rectangular */}
+            <div className="h-56 bg-white p-3">
+              {project.image && !project.image.includes("placeholder") ? (
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={300}
+                  height={200}
+                  className="w-full h-full object-cover rounded-md"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center bg-gray-100 rounded-md">
+                  <span className="text-gray-600 text-4xl  text-center px-4">
+                    {project.icon}
+                  </span>
+                </div>
+              )}
             </div>
-            <div className="p-4">
+
+            {/* Description Section */}
+            <div className="p-4 flex-1 flex flex-col">
               <h3 className="text-base text-gray-900 mb-2">{project.title}</h3>
               <p className="text-gray-600 text-sm mb-3">
                 {project.description}
               </p>
-              <div className="flex gap-4 text-base ">
+            </div>
+            {/* Links Section */}
+            <div className="flex gap-4 text-base px-4 py-3 bg-white mt-auto">
+              {project.link && (
                 <a
                   href={project.link}
-                  className="text-blue-600 text-sm flex items-center gap-1 border px-3 py-1 rounded-md transition-colors"
+                  className="text-blue-600 text-sm flex items-center gap-1 border px-3 py-1 rounded-md transition-colors bg-white"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Live Preview"
                 >
                   Live Preview
                 </a>
-                <a
-                  href={project.info}
-                  className="text-gray-700 text-sm flex items-center gap-1 border px-3 py-1 rounded-md transition-colors"
-                >
-                  Info
-                </a>
-                <a
-                  href={project.github}
-                  className="text-gray-100 text-sm flex items-center gap-1 border px-3 py-1 rounded-md bg-gray-800 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                >
-                  GitHub
-                </a>
-              </div>
+              )}
+              <a
+                href={project.info}
+                className="text-gray-700 text-sm flex items-center gap-1 border px-3 py-1 rounded-md transition-colors bg-white"
+              >
+                Info
+              </a>
+              <a
+                href={project.github}
+                className="text-gray-100 text-sm flex items-center gap-1 border px-3 py-1 rounded-md bg-gray-800 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                GitHub
+              </a>
             </div>
           </div>
         ))}

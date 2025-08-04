@@ -7,6 +7,7 @@ export { ProjectsSection } from "./ProjectsSection";
 export { EducationSection } from "./EducationSection";
 export { RecognitionSection } from "./RecognitionSection";
 export { RecommendationSection } from "./RecommendationSection";
+export { ExtrasSection } from "./ExtrasSection";
 export { LinksSection } from "./LinksSection";
 export { ContactSection } from "./ContactSection";
 export { Footer } from "./Footer";
