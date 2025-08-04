@@ -1,0 +1,13 @@
+export { ProfileCard } from "./ProfileCard";
+export { AboutSection } from "./AboutSection";
+export { SkillsSection } from "./SkillsSection";
+export { ExperienceSection } from "./ExperienceSection";
+export { TechStackSection } from "./TechStackSection";
+export { ProjectsSection } from "./ProjectsSection";
+export { EducationSection } from "./EducationSection";
+export { RecognitionSection } from "./RecognitionSection";
+export { RecommendationSection } from "./RecommendationSection";
+export { LinksSection } from "./LinksSection";
+export { ContactSection } from "./ContactSection";
+export { Footer } from "./Footer";
+export { PortfolioCV } from "./PortfolioCV";
