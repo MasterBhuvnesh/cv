@@ -1,4 +1,3 @@
 - [ ] Add a 404 routes
-- [ ] Fix the theme of profile card
 - [ ] blog route
 - [ ] project route
