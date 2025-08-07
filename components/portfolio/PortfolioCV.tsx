@@ -11,7 +11,6 @@ import {
   RecognitionSection,
   RecommendationSection,
   LinksSection,
-  ContactSection,
   Footer,
   ExtrasSection,
   ProfileCard,
@@ -36,7 +35,6 @@ export function PortfolioCV() {
           <RecommendationSection />
           <ExtrasSection />
           <LinksSection />
-          <ContactSection />
           <Footer />
         </div>
       </div>
