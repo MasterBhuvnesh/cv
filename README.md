@@ -1,4 +1,6 @@
-- [ ] blog route
-- [ ] project route
+- [ ] project route and its info markdown
 - [ ] eslint & prettier
 - [ ] emails
+- [ ] fix profile card height and wdith
+- [ ] SEO
+- [ ] CV file - Download

@@ -1,5 +1,10 @@
 export function RecognitionSection() {
   const recognition = [
+    {
+      title: "Google Gemini Ambassador",
+      organization: "Google - Gemini",
+      year: "2025",
+    },
     { title: "Android Developer", organization: "GDG Campus", year: "2023" },
     {
       title: "Best Architecture Design",

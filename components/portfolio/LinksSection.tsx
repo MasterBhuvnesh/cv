@@ -3,6 +3,7 @@ import { ExternalLink } from "lucide-react";
 
 export function LinksSection() {
   const links = [
+    { platform: "LinkedIn", url: "https://www.linkedin.com/in/bhuvneshverma/" },
     {
       platform: "HackerRank",
       url: "https://www.hackerrank.com/profile/bhuvneshverma291",
@@ -11,7 +12,6 @@ export function LinksSection() {
     { platform: "GitHub", url: "https://github.com/MasterBhuvnesh" },
     { platform: "Medium", url: "https://medium.com/@bhuvneshverma" },
     { platform: "Instagram", url: "https://www.instagram.com/vermaji_2904/" },
-    { platform: "LinkedIn", url: "https://www.linkedin.com/in/bhuvneshverma/" },
   ];
 
   return (
@@ -26,6 +26,8 @@ export function LinksSection() {
           <a
             key={index}
             href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-between p-2 px-3 bg-white rounded-lg border hover:shadow-md hover:scale-[1.02] transition-all duration-200 ease-in-out group"
           >
             <span className="text-gray-700">{link.platform}</span>
