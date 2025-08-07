@@ -1,6 +1,7 @@
 import "./globals.css";
 import { fontStyles } from "@/lib/fonts";
 import { metadata } from "@/lib/metadata";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export { metadata };
 
@@ -10,12 +11,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      suppressHydrationWarning
+    >
       <head>
         <style>{fontStyles}</style>
       </head>
-      {/*  CHANGE LATER */}
-      <body className="bg-gray-50">{children}</body>
+      <body className="bg-gray-50 text-gray-900 antialiased">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
