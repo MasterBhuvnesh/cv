@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Bhuvnesh Verma" }],
   creator: "Bhuvnesh Verma",
   openGraph: {
-    title: "Portfolio CV",
+    title: "Bhuvnesh Verma CV",
     description:
       "A portfolio CV of Bhuvnesh Verma, showcasing skills and projects.",
     type: "website",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio CV",
+    title: "Bhuvnesh Verma CV",
     description:
       "A portfolio CV of Bhuvnesh Verma, showcasing skills and projects.",
   },
