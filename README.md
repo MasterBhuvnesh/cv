@@ -1,3 +1,4 @@
-- [ ] Add a 404 routes
 - [ ] blog route
 - [ ] project route
+- [ ] eslint & prettier
+- [ ] emails
