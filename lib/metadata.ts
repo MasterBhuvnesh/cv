@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bhuvnesh CV",
+  title: "Bhuvnesh Verma CV",
   icons: {
     icon: "/icon.jpeg",
   },
