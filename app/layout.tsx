@@ -1,7 +1,6 @@
 import "./globals.css";
 import { fontStyles } from "@/lib/fonts";
 import { metadata } from "@/lib/metadata";
-import { ThemeProvider } from "@/components/theme-provider";
 
 export { metadata };
 
@@ -18,16 +17,7 @@ export default function RootLayout({
       <head>
         <style>{fontStyles}</style>
       </head>
-      <body className="bg-gray-50 text-gray-900 antialiased">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-      </body>
+      <body className="bg-gray-50 text-gray-900 antialiased">{children}</body>
     </html>
   );
 }
