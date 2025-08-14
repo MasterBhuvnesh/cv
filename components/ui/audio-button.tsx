@@ -3,13 +3,23 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const PlayIcon: React.FC = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="h-4 w-4"
+  >
     <path d="M5 3v18l15-9L5 3z" />
   </svg>
 );
 
 const PauseIcon: React.FC = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="h-4 w-4"
+  >
     <path d="M6 4h4v16H6zM14 4h4v16h-4z" />
   </svg>
 );
@@ -103,7 +113,11 @@ const AudioButton: React.FC = () => {
         className="fixed left-4 bottom-8 z-50 inline-flex items-center justify-center h-12 w-12 rounded-full bg-gray-800 text-white shadow-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white overflow-hidden"
       >
         {playing ? (
-          <img src="/icon.jpeg" alt="Now playing" className="h-12 w-12 object-cover" />
+          <img
+            src="/icon.jpeg"
+            alt="Now playing"
+            className="h-12 w-12 object-cover"
+          />
         ) : (
           <PlayIcon />
         )}
@@ -118,8 +132,10 @@ const AudioButton: React.FC = () => {
           <div className="px-3 py-3">
             <div className="flex items-center justify-between">
               <div className="pl-2 pb-1">
-                <h3 className="text-sm font-medium">Lines</h3>
-                <p className="text-xs text-gray-300">lines.mp3</p>
+                <h3 className="text-sm font-medium">line without a hook </h3>
+                <p className="text-xs text-gray-300">
+                  line without a hook .mp3
+                </p>
               </div>
               <span className="text-[12px] text-gray-400">Now</span>
             </div>
