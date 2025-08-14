@@ -1,6 +1,7 @@
 import "./globals.css";
 import { fontStyles } from "@/lib/fonts";
 import { metadata } from "@/lib/metadata";
+import AudioButton from "@/components/ui/audio-button";
 
 export { metadata };
 
@@ -17,7 +18,12 @@ export default function RootLayout({
       <head>
         <style>{fontStyles}</style>
       </head>
-      <body className="bg-gray-50 text-gray-900 antialiased">{children}</body>
+      <body className="bg-gray-50 text-gray-900 antialiased">
+        {children}
+
+        {/* Audio play/pause button (fixed bottom-right) */}
+        <AudioButton />
+      </body>
     </html>
   );
 }
