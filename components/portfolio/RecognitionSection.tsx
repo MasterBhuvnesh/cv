@@ -29,7 +29,7 @@ export function RecognitionSection() {
         {recognition.map((item, idx) => (
           <div
             key={item.title + item.year}
-            className="bg-white rounded-xl shadow-sm overflow-hidden cursor-pointer hover:shadow-md transition-shadow duration-200 ease-in-out"
+            className="bg-white rounded-xl shadow-sm overflow-hidden  hover:shadow-md transition-shadow duration-200 ease-in-out"
           >
             <div className="px-3 py-1">
               <div className="flex items-center justify-between">

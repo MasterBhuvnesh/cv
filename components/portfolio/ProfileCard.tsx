@@ -62,13 +62,13 @@ export function ProfileCard() {
             variant="outline"
             className="w-full bg-transparent hover:scale-[1.02] transition-all duration-200 ease-in-out"
             onClick={() => {
-                    const link = document.createElement("a");
-                    link.href = "/BHUVNESH_VERMA_CV.pdf";
-                    link.download = "BHUVNESH_VERMA_CV.pdf";
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                  }}
+              const link = document.createElement("a");
+              link.href = "/BHUVNESH_VERMA_CV.pdf";
+              link.download = "BHUVNESH_VERMA_CV.pdf";
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
           >
             <Download className="w-4 h-4 mr-2" />
             Download CV
@@ -140,7 +140,7 @@ export function ProfileCard() {
                 <Button
                   variant="outline"
                   className="w-full border-gray-300 bg-transparent hover:bg-gray-50 hover:scale-[1.02] transition-all duration-200 ease-in-out text-sm"
-                                  onClick={() => {
+                  onClick={() => {
                     const link = document.createElement("a");
                     link.href = "/BHUVNESH_VERMA_CV.pdf";
                     link.download = "BHUVNESH_VERMA_CV.pdf";
@@ -148,7 +148,7 @@ export function ProfileCard() {
                     link.click();
                     document.body.removeChild(link);
                   }}
-                  >
+                >
                   <Download className="w-4 h-4 mr-2" />
                   Download CV
                 </Button>

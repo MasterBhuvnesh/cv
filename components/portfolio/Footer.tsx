@@ -1,4 +1,3 @@
-// components/portfolio/Footer.tsx
 import { Heart } from "lucide-react";
 
 export function Footer() {
