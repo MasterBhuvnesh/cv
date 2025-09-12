@@ -1,5 +1,6 @@
 "use client";
 
+// import Island from "./demo";
 import {
   // ProfileCard,
   AboutSection,
@@ -36,6 +37,7 @@ export function PortfolioCV() {
           <ExtrasSection />
           <LinksSection />
           <Footer />
+          {/* <Island /> */}
         </div>
       </div>
     </div>

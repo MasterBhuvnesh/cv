@@ -22,7 +22,7 @@ export function EducationSection() {
       id: 2,
       institution: "St. Paul School",
       degree: "High school Diploma",
-      period: "2020 - 2022",
+      period: "2021 - 2023",
       description:
         "At St. Paul School, I completed my high school education with a focus on science and mathematics. This foundation has been crucial in my pursuit of higher education in technology and engineering.",
     },

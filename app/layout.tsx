@@ -20,7 +20,6 @@ export default function RootLayout({
       </head>
       <body className="bg-gray-50 text-gray-900 antialiased">
         {children}
-
         {/* Audio play/pause button (fixed bottom-right) */}
         <AudioButton />
       </body>
