@@ -14,7 +14,7 @@ export function EducationSection() {
       id: 1,
       institution: "Ramdevbaba University Nagpur",
       degree: "Artificial Intelligence and Machine Learning",
-      period: "Aug 2022 - Present",
+      period: "Aug 2023 - Present",
       description:
         "Focused on advanced topics in AI and ML, including deep learning, natural language processing, and computer vision. Developed practical skills through projects and collaborations, enhancing my understanding of real-world applications.",
     },
@@ -22,7 +22,7 @@ export function EducationSection() {
       id: 2,
       institution: "St. Paul School",
       degree: "High school Diploma",
-      period: "2020 - 2022",
+      period: "2021 - 2023",
       description:
         "At St. Paul School, I completed my high school education with a focus on science and mathematics. This foundation has been crucial in my pursuit of higher education in technology and engineering.",
     },
