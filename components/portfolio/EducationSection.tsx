@@ -14,7 +14,7 @@ export function EducationSection() {
       id: 1,
       institution: "Ramdevbaba University Nagpur",
       degree: "Artificial Intelligence and Machine Learning",
-      period: "Aug 2022 - Present",
+      period: "Aug 2023 - Present",
       description:
         "Focused on advanced topics in AI and ML, including deep learning, natural language processing, and computer vision. Developed practical skills through projects and collaborations, enhancing my understanding of real-world applications.",
     },
