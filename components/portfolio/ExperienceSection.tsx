@@ -9,13 +9,21 @@ export function ExperienceSection() {
     {
       id: 1,
       company: "GDG Campus",
+      position: "Web Domain Lead",
+      period: "Sept 2024 - Present",
+      description:
+        "Leading web development initiatives, mentoring junior developers, and overseeing project delivery to ensure high-quality web solutions.",
+    },
+    {
+      id: 2,
+      company: "GDG Campus",
       position: "Senior App developer",
-      period: "Oct 2023 - Present",
+      period: "Oct 2023 - Sept 2024",
       description:
         "Experienced in building scalable, cross-platform apps with clean architecture and real-time features focused on practical, high-impact solutions.",
     },
     {
-      id: 2,
+      id: 3,
       company: "Freelance",
       position: "App | Web Developer",
       period: "Aug 2022 - Present",
