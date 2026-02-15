@@ -8,14 +8,16 @@ export function AboutSection() {
       </div>
       <div className="space-y-4 text-gray-600 leading-relaxed text-base ">
         <p>
-          Hi, I’m Bhuvnesh Verma, a Web and Mobile App Developer from Nagpur,
-          India. I’m passionate about building production-ready apps with clean
-          architecture, scalability, and simplicity.
+          Hi, I’m Bhuvnesh Verma, a Cloud-Focused Full Stack Developer from
+          Nagpur, India. I specialize in building scalable web and mobile
+          applications backed by robust cloud infrastructure.
         </p>
         <p>
-          I focus on delivering high-value solutions through strong system
-          design and thoughtful collaboration—solving real-world problems with
-          precision.
+          With hands-on experience in modern frontend frameworks, backend
+          systems, and AWS cloud architecture, I design production-ready
+          solutions that are secure, efficient, and built for scale. I believe in
+          clean architecture, strong system design, and solving real-world
+          problems with precision.
         </p>
       </div>
     </section>

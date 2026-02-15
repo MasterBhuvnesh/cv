@@ -45,6 +45,17 @@ export function TechStackSection() {
       { name: "LogRocket" },
       { name: "Sentry" },
     ],
+    Cloud: [
+      { name: "AWS" },
+      { name: "Cloudflare" },
+      { name: "Terraform" },
+      { name: "Kubernetes" },
+      { name: "Docker" },
+      { name: "Helm" },
+      { name: "ArgoCD" },
+      { name: "GitHub Actions" },
+      { name: "CI/CD" },
+    ],
     Backend: [
       { name: "Node.js" },
       { name: "Bun" },
@@ -80,6 +91,7 @@ export function TechStackSection() {
     ],
     "DevOps Tools": [
       { name: "Git" },
+      { name: "AWS" },
       { name: "GitHub" },
       { name: "Docker" },
       { name: "Jenkins" },
