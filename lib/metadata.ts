@@ -1,28 +1,52 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bhuvnesh Verma CV",
+  title: "Bhuvnesh Verma | Full-Stack Developer & System Architect",
   icons: {
     icon: "/icon.jpeg",
   },
   description:
-    "A portfolio CV of Bhuvnesh Verma, showcasing skills and projects.",
-  keywords: ["portfolio", "cv", "resume", "developer", "professional"],
+    "Bhuvnesh Verma — Full-stack developer specializing in scalable SaaS platforms, cloud-native infrastructure, and enterprise-grade applications. B.Tech AI & ML student at RCOEM, Nagpur. Building production-ready software with Node.js, React, Expo, AWS, and DevOps.",
+  keywords: [
+    "Bhuvnesh Verma",
+    "full-stack developer",
+    "software engineer",
+    "system architect",
+    "SaaS developer",
+    "Node.js",
+    "React",
+    "Next.js",
+    "Expo",
+    "React Native",
+    "TypeScript",
+    "AWS",
+    "DevOps",
+    "Docker",
+    "Kubernetes",
+    "PostgreSQL",
+    "cloud-native",
+    "CI/CD",
+    "GDG RBU",
+    "RCOEM Nagpur",
+    "AI and ML",
+    "Studzee",
+    "portfolio",
+  ],
   authors: [{ name: "Bhuvnesh Verma" }],
   creator: "Bhuvnesh Verma",
   openGraph: {
-    title: "Bhuvnesh Verma CV",
+    title: "Bhuvnesh Verma | Full-Stack Developer & System Architect",
     description:
-      "A portfolio CV of Bhuvnesh Verma, showcasing skills and projects.",
+      "Full-stack developer building scalable, production-ready software and enterprise-grade applications. Expertise in Node.js, React, AWS, DevOps, and cloud-native architecture.",
     type: "website",
     locale: "en_US",
+    siteName: "Bhuvnesh Verma Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bhuvnesh Verma CV",
+    title: "Bhuvnesh Verma | Full-Stack Developer & System Architect",
     description:
-      "A portfolio CV of Bhuvnesh Verma, showcasing skills and projects.",
+      "Full-stack developer building scalable, production-ready software and enterprise-grade applications. Expertise in Node.js, React, AWS, DevOps, and cloud-native architecture.",
   },
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
 };

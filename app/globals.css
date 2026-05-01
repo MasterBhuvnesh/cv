@@ -88,6 +88,14 @@
 @layer base {
   * {
     @apply border-border;
+    scrollbar-width: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    display: none;
   }
   body {
     @apply bg-background text-foreground;
