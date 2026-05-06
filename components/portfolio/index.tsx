@@ -11,4 +11,5 @@ export { ExtrasSection } from "./ExtrasSection";
 export { LinksSection } from "./LinksSection";
 export { ContactSection } from "./ContactSection";
 export { Footer } from "./Footer";
+export { SectionNav } from "./SectionNav";
 export { PortfolioCV } from "./PortfolioCV";
