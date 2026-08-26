@@ -8,16 +8,22 @@ export function AboutSection() {
       </div>
       <div className="space-y-4 text-gray-600 leading-relaxed text-base ">
         <p>
-          Hi, I’m Bhuvnesh Verma, a Cloud-Focused Full Stack Developer from
-          Nagpur, India. I specialize in building scalable web and mobile
-          applications backed by robust cloud infrastructure.
+          Hi, I’m Bhuvnesh Verma, a Cloud-Focused Full-Stack and App Engineer
+          from Nagpur, India, with 2+ years of hands-on experience building
+          production-ready applications and cloud-native systems.
         </p>
         <p>
-          With hands-on experience in modern frontend frameworks, backend
-          systems, and AWS cloud architecture, I design production-ready
-          solutions that are secure, efficient, and built for scale. I believe in
-          clean architecture, strong system design, and solving real-world
-          problems with precision.
+          I specialize in React Native, modern web stacks, backend systems, and
+          DevOps-driven delivery. I’ve led an examination platform serving ~600
+          candidates on AWS with the whole stack codified in Terraform, shipped
+          React Native apps to the Play Store and App Store, and built RAG
+          pipelines and AI agents into real products.
+        </p>
+        <p>
+          I own problems end to end: designing APIs, implementing auth,
+          automating CI/CD, and keeping production observable. I care about clean
+          architecture, strong system design, and shipping fast without
+          shortcuts.
         </p>
       </div>
     </section>

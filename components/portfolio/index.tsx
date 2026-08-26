@@ -4,6 +4,7 @@ export { SkillsSection } from "./SkillsSection";
 export { ExperienceSection } from "./ExperienceSection";
 export { TechStackSection } from "./TechStackSection";
 export { ProjectsSection } from "./ProjectsSection";
+export { ResourcesSection } from "./ResourcesSection";
 export { EducationSection } from "./EducationSection";
 export { RecognitionSection } from "./RecognitionSection";
 export { RecommendationSection } from "./RecommendationSection";

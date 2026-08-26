@@ -1,11 +1,13 @@
 export function SkillsSection() {
   const skills = [
     "App Development",
-    "Problem-Solving",
-    "System Design",
-    "Backend",
     "Web Development",
+    "Backend",
+    "System Design",
+    "Cloud Infrastructure",
     "DevOps",
+    "AI Engineering",
+    "Problem-Solving",
   ];
 
   return (

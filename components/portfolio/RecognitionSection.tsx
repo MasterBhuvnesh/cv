@@ -12,6 +12,16 @@ export function RecognitionSection() {
       year: "2024",
     },
     {
+      title: "Fundamentals of Deep Learning",
+      organization: "NVIDIA / AICTE",
+      year: "2024",
+    },
+    {
+      title: "Python (Basic) Certification",
+      organization: "HackerRank",
+      year: "2024",
+    },
+    {
       title: "Karate Certified",
       organization: "Gitoku Kai India",
       year: "2022",

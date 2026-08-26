@@ -6,6 +6,7 @@ import {
   ExperienceSection,
   TechStackSection,
   ProjectsSection,
+  ResourcesSection,
   EducationSection,
   RecognitionSection,
   RecommendationSection,
@@ -28,6 +29,7 @@ export function PortfolioCV() {
           <section id="experience"><ExperienceSection /></section>
           <section id="techstack"><TechStackSection /></section>
           <section id="projects"><ProjectsSection /></section>
+          <section id="resources"><ResourcesSection /></section>
           <section id="education"><EducationSection /></section>
           <section id="recognition"><RecognitionSection /></section>
           <section id="recommendations"><RecommendationSection /></section>

@@ -12,9 +12,9 @@ export function EducationSection() {
   const education = [
     {
       id: 1,
-      institution: "Ramdevbaba University Nagpur",
-      degree: "Artificial Intelligence and Machine Learning",
-      period: "Aug 2023 - Present",
+      institution: "Shri Ramdeobaba College of Engineering and Management, Nagpur",
+      degree: "B.Tech, Computer Science (AI & ML), CGPA 8.56/10",
+      period: "2023 - 2027 (expected)",
       description:
         "Focused on advanced topics in AI and ML, including deep learning, natural language processing, and computer vision. Developed practical skills through projects and collaborations, enhancing my understanding of real-world applications.",
     },
