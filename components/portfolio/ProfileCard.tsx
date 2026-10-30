@@ -24,13 +24,13 @@ export function ProfileCard() {
                 />
               </div>
               <div className="flex-1">
-                <h1 className="text-lg text-gray-900 leading-tight">
+                <p className="text-lg text-gray-900 leading-tight">
                   Hello I'm
                   <br />
                   Bhuvnesh Verma
-                </h1>
+                </p>
                 <p className="text-xs text-gray-600 mt-1">
-                  Software Engineer, Polyglot Developer & Solution Architect
+                  Product Engineer, Cloud-Native Builder, AI Systems Creator
                 </p>
               </div>
             </div>
@@ -117,7 +117,7 @@ export function ProfileCard() {
                   Bhuvnesh Verma
                 </h1>
                 <p className="text-gray-600 text-sm">
-                  Software Engineer, Polyglot Developer & Solution Architect
+                  Product Engineer, Cloud-Native Builder, AI Systems Creator
                 </p>
               </div>
 
