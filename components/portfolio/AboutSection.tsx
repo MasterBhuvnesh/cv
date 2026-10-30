@@ -8,7 +8,7 @@ export function AboutSection() {
       </div>
       <div className="space-y-4 text-gray-600 leading-relaxed text-base ">
         <p>
-          Hi, I’m Bhuvnesh Verma, a Cloud-Focused Full-Stack and App Engineer
+          Hi, I’m Bhuvnesh Verma, a product engineer, cloud-native builder and AI systems creator
           from Nagpur, India, with 2+ years of hands-on experience building
           production-ready applications and cloud-native systems.
         </p>

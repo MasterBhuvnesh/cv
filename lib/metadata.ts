@@ -1,12 +1,24 @@
 import type { Metadata } from "next";
 
+const title =
+  "Bhuvnesh Verma | Resume";
+const description =
+  "Resume of Bhuvnesh Verma, product engineer, cloud-native builder and AI systems creator in Nagpur, India: experience, projects, skills and a downloadable CV.";
+const image = {
+  url: "https://bhuvneshverma.dev/og-v2.png",
+  width: 1200,
+  height: 630,
+  alt: "Bhuvnesh Verma · Product Engineer, Cloud-Native Builder, AI Systems Creator",
+};
+
 export const metadata: Metadata = {
-  title: "Bhuvnesh Verma | Full-Stack Developer & System Architect",
+  metadataBase: new URL("https://resume.bhuvneshverma.dev"),
+  alternates: { canonical: "/" },
+  title,
   icons: {
     icon: "/icon.jpeg",
   },
-  description:
-    "Bhuvnesh Verma — Full-stack developer specializing in scalable SaaS platforms, cloud-native infrastructure, and enterprise-grade applications. B.Tech AI & ML student at RCOEM, Nagpur. Building production-ready software with Node.js, React, Expo, AWS, and DevOps.",
+  description,
   keywords: [
     "Bhuvnesh Verma",
     "full-stack developer",
@@ -33,7 +45,7 @@ export const metadata: Metadata = {
     "AI agents",
     "LangChain",
     "GDG RBU",
-    "RCOEM Nagpur",
+    "Ramdeobaba University",
     "AI and ML",
     "Studzee",
     "Skarm",
@@ -43,18 +55,23 @@ export const metadata: Metadata = {
   authors: [{ name: "Bhuvnesh Verma" }],
   creator: "Bhuvnesh Verma",
   openGraph: {
-    title: "Bhuvnesh Verma | Full-Stack Developer & System Architect",
-    description:
-      "Full-stack developer building scalable, production-ready software and enterprise-grade applications. Expertise in Node.js, React, AWS, DevOps, and cloud-native architecture.",
+    title: title,
+    description,
     type: "website",
     locale: "en_US",
-    siteName: "Bhuvnesh Verma Portfolio",
+    siteName: "Bhuvnesh Verma",
+    url: "/",
+    images: [image],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bhuvnesh Verma | Full-Stack Developer & System Architect",
-    description:
-      "Full-stack developer building scalable, production-ready software and enterprise-grade applications. Expertise in Node.js, React, AWS, DevOps, and cloud-native architecture.",
+    images: [image],
+    title: title,
+    description,
   },
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { "max-image-preview": "large", "max-snippet": -1 },
+  },
 };

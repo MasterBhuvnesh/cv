@@ -3,6 +3,7 @@ import { ExternalLink } from "lucide-react";
 
 export function LinksSection() {
   const links = [
+    { platform: "Portfolio", url: "https://bhuvneshverma.dev/" },
     { platform: "LinkedIn", url: "https://www.linkedin.com/in/bhuvneshverma/" },
     {
       platform: "HackerRank",
